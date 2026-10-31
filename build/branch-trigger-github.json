@@ -1,0 +1,17 @@
+{
+  "name": "branch",
+  "description": "Trigger dev build/deploy for any branch other than main",
+  "filename": "build/branch-cloudbuild.yaml",
+  "github": {
+    "owner": "ayushgupta0010",
+    "name": "gke-progression",
+    "push": {
+      "branch": "^main$",
+      "invertRegex": true
+    }
+  },
+  "substitutions": {
+    "_ZONE": "us-central1-b",
+    "_CLUSTER": "gke-progression-cluster"
+  }
+}
