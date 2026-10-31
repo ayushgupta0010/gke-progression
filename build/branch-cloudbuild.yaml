@@ -63,3 +63,6 @@ steps:
           kubectl apply --namespace ${BRANCH_NAME} --recursive -f k8s/deployments/dev
           kubectl apply --namespace ${BRANCH_NAME} --recursive -f k8s/services
 
+
+options:
+  logging: CLOUD_LOGGING_ONLY
