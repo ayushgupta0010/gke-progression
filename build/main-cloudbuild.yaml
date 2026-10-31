@@ -61,3 +61,6 @@ steps:
           kubectl apply --namespace production --recursive -f k8s/deployments/canary
           kubectl apply --namespace production --recursive -f k8s/services
 
+
+options:
+  logging: CLOUD_LOGGING_ONLY
